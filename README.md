@@ -10,38 +10,27 @@ Task tracking application to showcase a simple RESTful API using Java and Spring
 
 ### Prerequisites
 
-- Java 17 or later
-- Maven 3.5+
-- MySQL 5.7+
+- Docker
 
 ### Setting Up
 
 1. Clone the repository:
 <br><br>
     ```
-    git clone https://github.com/iForthencho/spring-task-tracker.git
+    git clone https://github.com/iForthencho/spring-task-tracker-docker.git
     cd spring-task-tracker
     ```
-2. Setting up the MySQL database
-   1. Create a new MySQL local instance and run the provided MySQL scripts found in the "MySQL-scripts" folder.
-   2. Update 'src/main/resources/application.properties' with your MySQL credentials.
+2. Build the Docker image:
 <br><br>
    ```
-    spring.datasource.username=
-    spring.datasource.password=
+   docker build -t dockertasktracker .
+
+3. Run the container
+<br><br>
    ```
-3. Build the application:
-<br><br>
-    ```
-    mvnw package
-    ```
-4. Run the application:
-<br><br>
-    ```
-    cd target/
-    java -jar demo-0.0.1-SNAPSHOT.jar
-    ```
-   The server will start on port '8080'.
+   docker-compose up
+   ```
+   The app will be accessible at "http://localhost:8080".
 
 ### API Endpoints
 | HTTP Method | Endpoint | Description |
