@@ -18,7 +18,7 @@ Task tracking application to showcase a simple RESTful API using Java and Spring
 <br><br>
     ```
     git clone https://github.com/iForthencho/spring-task-tracker-docker.git
-    cd spring-task-tracker
+    cd spring-task-tracker-docker
     ```
 2. Build the Docker image:
 <br><br>
