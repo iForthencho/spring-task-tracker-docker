@@ -10,9 +10,13 @@ Task tracking application to showcase a simple RESTful API using Java and Spring
 
 ### Prerequisites
 
+- Java 17 or later
+- Maven 3.5+
 - Docker
 
 ### Setting Up
+
+This project has been dockerized, please refer to the instructions below to setup and run the application.
 
 1. Clone the repository:
 <br><br>
@@ -51,10 +55,10 @@ Task tracking application to showcase a simple RESTful API using Java and Spring
 * Please note that this is just to showcase spring security, hence usernames and passwords are added here.
 * BCrypt encryption is used in this demo.
 
-| Username | Password | Role                     |
-| --- |---|--------------------------|
-| shawn | daintern | EMPLOYEE, MANAGER, ADMIN | 
-| susan | daintern | EMPLOYEE, MANAGER |
-| john | daintern | EMPLOYEE |
+| Username | Password | Role | HTTP Method |
+| --- |---|---|-------------|
+| shawn | daintern | EMPLOYEE, MANAGER, ADMIN | All methods |
+| susan | daintern | EMPLOYEE, MANAGER | GET, POST, PUT |
+| john | daintern | EMPLOYEE | GET |
 
 
