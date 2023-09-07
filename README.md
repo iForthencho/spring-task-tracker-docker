@@ -24,6 +24,7 @@ Task tracking application to showcase a simple RESTful API using Java and Spring
 <br><br>
    ```
    docker build -t dockertasktracker .
+   ```
 
 3. Run the container
 <br><br>
